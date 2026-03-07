@@ -1,0 +1,15 @@
+{
+    "save_dir": "download",
+    "chapters_file": "chapters.json",
+    "referer": "https://www.example.com/",
+    "max_retries": 8,
+    "timeout": 45,
+    "image_delay": 2,
+    "chapter_delay": 8,
+    "retry_delay": 5,
+    "use_proxy": false,
+    "proxies": {
+        "http": "http://127.0.0.1:7890",
+        "https": "http://127.0.0.1:7890"
+    }
+}
