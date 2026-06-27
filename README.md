@@ -1,60 +1,52 @@
-# 🦸 ComicCrawler - 通用漫画下载工具
+#  ComicCrawler - 通用漫画下载工具
+
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-3.6%2B-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
-  <img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge" alt="License">
-  <img src="https://img.shields.io/github/stars/Tw1nkleDu5t/ComicCrawler?style=for-the-badge&logo=github" alt="Stars">
-  <img src="https://img.shields.io/github/issues/Tw1nkleDu5t/ComicCrawler?style=for-the-badge" alt="Issues">
-  <img src="https://img.shields.io/github/forks/Tw1nkleDu5t/ComicCrawler?style=for-the-badge" alt="Forks">
-</p>
-
-<p align="center">
-  <b>✨ 一个强大、灵活、易用的漫画章节下载工具 ✨</b><br>
+  <b>一个强大、灵活、易用的漫画章节下载工具</b><br>
   <i>支持自动重试 · 断点续传 · 批量管理 · 代理配置</i>
 </p>
 
 <p align="center">
-  <a href="#-项目简介">📖 项目简介</a> •
-  <a href="#-快速开始">🚀 快速开始</a> •
-  <a href="#-使用教程">📚 使用教程</a> •
-  <a href="#-常见问题">❓ 常见问题</a> •
-  <a href="#-高级配置">⚙️ 高级配置</a>
+  <a href="#-项目简介">项目简介</a> •
+  <a href="#-快速开始">快速开始</a> •
+  <a href="#-使用教程">使用教程</a> •
+  <a href="#-常见问题">常见问题</a> •
+  <a href="#-高级配置">高级配置</a>
 </p>
 
 <p align="center">
-  <a href="https://github.com/Tw1nkleDu5t" target="_blank">👤 作者主页</a> •
-  <a href="https://github.com/Tw1nkleDu5t/ComicCrawler/issues" target="_blank">🐛 提交Issue</a>
+  <a href="https://github.com/Tw1nkleDu5t" target="_blank">作者主页</a> •
 </p>
 
 ---
 
-## 📖 项目简介
+## 项目简介
 
 ComicCrawler 是一款专为漫画爱好者设计的通用下载工具。只需提供章节页面链接，它就能自动解析图片地址、批量抓取并整理成本地归档文件。无论是追更热门连载，还是收藏经典老漫画，ComicCrawler 都能助你轻松搞定。
 
-### ✨ 核心功能
+### 核心功能
 
 | 功能 | 说明 |
 |:----:|:------|
-| 🔄 智能重试 | 网络波动时自动重试（最多可设 8 次），确保完整下载 |
-| 📝 精确失败记录 | 单独记录失败的图片和章节，支持一键重试 |
-| ⏸️ 断点续传 | 已下载图片自动跳过，随时中断也不用担心重复下载 |
-| 🚀 批量下载 | 支持全部下载、指定范围下载（如 1-50 话）或测试下载前 5 话 |
-| 🔧 高度可配置 | 延迟时间、超时设置、代理服务器、请求头均可自定义 |
-| 🌐 代理支持 | 内置代理开关，轻松绕过访问限制 |
-| 📊 实时进度 | 清晰的进度显示，实时查看下载状态和剩余时间 |
-| 📂 智能命名 | 自动创建规范的文件夹和文件命名，便于管理 |
+| 智能重试 | 网络波动时自动重试（最多可设 8 次），确保完整下载 |
+| 精确失败记录 | 单独记录失败的图片和章节，支持一键重试 |
+| 断点续传 | 已下载图片自动跳过，随时中断也不用担心重复下载 |
+| 批量下载 | 支持全部下载、指定范围下载（如 1-50 话）或测试下载前 5 话 |
+| 高度可配置 | 延迟时间、超时设置、代理服务器、请求头均可自定义 |
+| 代理支持 | 内置代理开关，轻松绕过访问限制 |
+| 实时进度 | 清晰的进度显示，实时查看下载状态和剩余时间 |
+| 智能命名 | 自动创建规范的文件夹和文件命名，便于管理 |
 
 ---
 
-## 🚀 快速开始
+## 快速开始
 
-### 📋 环境要求
+### 环境要求
 
 - Python 3.6 或更高版本
 - pip 包管理工具
 
-### ⏱️ 一分钟安装指南
+### 一分钟安装指南
 
 **步骤1：克隆仓库**
 
@@ -106,7 +98,7 @@ python comic_downloader.py
 ```
 ---
 
-## 📚 使用教程
+## 使用教程
 
 ### 一、首次运行配置
 
@@ -118,14 +110,14 @@ ComicCrawler v1.0.0 - 通用漫画下载工具
 
 初始配置 (可直接回车使用默认值)
 
-📁 保存目录 [桌面/ComicDownload]: 
-📄 章节文件路径 [./chapters.json]: 
-🌐 Referer (必填) [https://www.example.com/]: 
-🔄 最大重试次数 [8]: 
-⏱️ 超时秒数 [45]: 
-⏸️ 图片间延迟(秒) [2]: 
-⏸️ 章节间延迟(秒) [8]: 
-🔄 重试延迟(秒) [5]:
+保存目录 [桌面/ComicDownload]: 
+章节文件路径 [./chapters.json]: 
+Referer (必填) [https://www.example.com/]: 
+最大重试次数 [8]: 
+超时秒数 [45]: 
+图片间延迟(秒) [2]: 
+章节间延迟(秒) [8]: 
+重试延迟(秒) [5]:
 
 #### 配置项详解
 
@@ -145,11 +137,11 @@ ComicCrawler v1.0.0 - 通用漫画下载工具
 配置完成后，进入主菜单：
 
 请选择：
-1. 📥 下载全部
-2. 🔢 指定范围
-3. 🔄 重试失败
-4. 🧪 测试下载 (前5章)
-0. 🚪 退出
+1. 下载全部
+2. 指定范围
+3. 重试失败
+4. 测试下载 (前5章)
+0. 退出
 
 请输入选项:
 
@@ -261,7 +253,7 @@ ComicCrawler v1.0.0 - 通用漫画下载工具
 | 章节文件夹 | {三位数编号}_{章节标题} | 001_第一章 相遇 |
 | 图片文件 | {三位数页码}.{扩展名} | 001.webp |
 
-💡 支持自动识别的图片格式：webp、jpg、jpeg、png
+支持自动识别的图片格式：webp、jpg、jpeg、png
 
 ### 六、实用操作技巧
 
@@ -289,14 +281,14 @@ pause
 
 ---
 
-## ❓ 常见问题
+##  常见问题
 
 ### Q1: 下载时提示"找不到图片"，怎么办？
 
 可能原因：
-- ❌ Referer 设置不正确（必须设置为漫画网站域名）
-- ❌ 网站有反爬虫机制
-- ❌ 图片URL格式特殊
+-  Referer 设置不正确（必须设置为漫画网站域名）
+-  网站有反爬虫机制
+-  图片URL格式特殊
 
 解决方法：
 1. 检查 Referer 是否与漫画网站域名一致
@@ -307,10 +299,10 @@ pause
 
 | 方法 | 说明 | 风险 |
 |:----:|:----:|:----:|
-| 降低图片延迟 | 将 IMAGE_DELAY 改为 1秒 | ⚠️ 易被封IP |
-| 使用代理 | 开启代理分散请求 | ✅ 推荐 |
-| 分批次下载 | 每次只下载30-50章 | ✅ 推荐 |
-| 夜间下载 | 选择网络空闲时段 | ✅ 安全 |
+| 降低图片延迟 | 将 IMAGE_DELAY 改为 1秒 | 易被封IP |
+| 使用代理 | 开启代理分散请求 |  推荐 |
+| 分批次下载 | 每次只下载30-50章 |  推荐 |
+| 夜间下载 | 选择网络空闲时段 |  安全 |
 
 ### Q3: 出现403错误（被禁止访问）怎么办？
 
@@ -332,7 +324,7 @@ pause
 
 ### Q5: 支持哪些图片格式？
 
-✅ 自动支持的格式：
+ 自动支持的格式：
 - webp（默认格式）
 - jpg / jpeg
 - png
@@ -343,7 +335,7 @@ pause
 
 ---
 
-## ⚙️ 高级配置
+## 高级配置
 
 ### 1. 使用代理服务器
 
@@ -415,13 +407,9 @@ DEFAULT_SAVE_DIR = os.path.join(DESKTOP_PATH, '我的漫画')
 ```
 ---
 
-## 📄 许可证
 
-本项目采用 **MIT 许可证** - 详见 LICENSE 文件
 
----
-
-## ⚠️ 免责声明
+## 免责声明
 
 本工具仅供学习交流使用，**请勿用于商业用途**。
 
@@ -433,20 +421,15 @@ DEFAULT_SAVE_DIR = os.path.join(DESKTOP_PATH, '我的漫画')
 
 ---
 
-## 📞 联系方式
+## 联系方式
 
 | 平台 | 链接 |
 |:----:|:----:|
 | 作者主页 | [@Tw1nkleDu5t](https://github.com/Tw1nkleDu5t) |
 | 项目地址 | [ComicCrawler](https://github.com/Tw1nkleDu5t/ComicCrawler) |
-| 提交Issue | [GitHub Issues](https://github.com/Tw1nkleDu5t/ComicCrawler/issues) |
 
 ---
 
 <div align="center">
-  
-### ⭐ 如果这个项目对您有帮助，请给一个 Star 吧！ ⭐
-
-**[⬆ 返回顶部](#-comiccrawler---通用漫画下载工具)**
 
 </div>
